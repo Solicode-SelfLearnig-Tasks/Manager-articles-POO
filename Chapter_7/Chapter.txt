@@ -1,0 +1,20 @@
+Chapter 7: Classes and Objects Basics
+
+In this chapter, I learned how to create classes and Create an instance objects in PHP.
+
+Key things to remember:
+
+1. Define a Class:
+- Use the `class` keyword followed by the name (example: `Article`).
+- Add properties using `public`, `protected`, or `private`.
+
+2. Use Methods:
+- Define functions inside a class to perform actions (example: `afficher()`).
+- Use `$this->property` to access properties within methods.
+
+3. Create Objects:
+- Use the `new` keyword to create an instance of a class (example: `$article1 = new Article("Introduction à PHP", "PHP est un langage de script côté serveur.");`).
+- Access property values and call methods using the `->` operator (example: `$article1->afficher()`).
+
+Conclusion:
+Classes are the blueprints for objects, allowing us to group data and logic together neatly!
