@@ -1,25 +1,24 @@
-Chapter 9: Encapsulation and Best Practices
+Chapter 9: Encapsulation
 
-In this chapter, I learned how to protect class data and ensure its consistency through encapsulation and validation best practices.
+In this chapter, I learned how to protect class data using Encapsulation.
 
 Key things to remember:
 
-1. Data Encapsulation:
-- Use the `private` keyword for properties.
-- This prevents direct access or accidental modification from outside the class.
+1. Private Properties:
+- Use `private` for properties so they can't be modified from outside the class.
 
-2. Getters and Setters:
-- `getX()` (Getter): Provide read access to a private property.
-- `setX($value)` (Setter): Provide write access to a private property.
+2. Getters & Setters:
+- Getters (`getVariable()`) are used to read the data.
+- Setters (`setVariable($value)`) are used to update the data securely.
 
-3. Validation and Sanitization in Setters:
-- Setters are the ideal place to check data before it is stored.
-- Example: `strlen($value) > 3` to ensure minimum length.
-- Example: `htmlspecialchars($value)` to prevent XSS and ensure data sanitization.
+3. Validation:
+- Always use Setters to check data before it's saved.
+- Example: check length with `strlen()`.
+- Example: clean bad inputs using `htmlspecialchars()`.
 
-4. Writing Clean Code:
-- Use meaningful names for methods and variables.
-- Keep methods focused on one task (Single Responsibility).
+4. Clean Code:
+- Give methods clear and readable names.
+- Ensure each method focuses on doing exactly one thing.
 
 Conclusion:
-Encapsulation isn't just about security; it's about building robust and reliable classes that protect their internal state!
+Encapsulation keeps our objects safe, reliable, and bug-free!
