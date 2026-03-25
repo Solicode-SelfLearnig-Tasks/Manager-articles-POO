@@ -1,0 +1,25 @@
+Chapter 10: PDO and CRUD
+
+In this chapter, I learned how to connect to a database and manage data using PDO.
+
+Key things to remember:
+
+1. Database Connection:
+- Create a `Database` class to handle connections.
+- Use `try...catch` to catch connection errors.
+
+2. CRUD Operations:
+- Create (`INSERT`), Read (`SELECT`), Update (`UPDATE`), Delete (`DELETE`).
+- Put these methods inside a model class like `User`.
+
+3. Security:
+- Use `$this->conn->prepare($sql)` to prevent SQL Injection.
+- Use `execute()` to safely pass variables to your queries.
+
+4. Fetching Data:
+- Use `query()` for a simple `SELECT`.
+- `$stmt->fetchAll(PDO::FETCH_ASSOC)` returns all results as an array.
+
+Conclusion:
+PDO combined with OOP keeps database interactions secure, organized, and reusable!
+
