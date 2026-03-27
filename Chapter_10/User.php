@@ -4,7 +4,7 @@ class User {
     private $table = "users";
 
     public $id;
-    public $nom;
+    public $name;
     public $email;
 
     public function __construct($db) {
@@ -13,9 +13,9 @@ class User {
 
     // CREATE
     public function create() {
-        $sql = "INSERT INTO {$this->table} (nom, email) VALUES (:nom, :email)";
+        $sql = "INSERT INTO {$this->table} (name, email) VALUES (:name, :email)";
         $stmt = $this->conn->prepare($sql);
-        return $stmt->execute(['nom' => $this->nom, 'email' => $this->email]);
+        return $stmt->execute(['name' => $this->name, 'email' => $this->email]);
     }
 
     // READ
@@ -27,9 +27,9 @@ class User {
 
     // UPDATE
     public function update() {
-        $sql = "UPDATE {$this->table} SET nom=:nom, email=:email WHERE id=:id";
+        $sql = "UPDATE {$this->table} SET name=:name, email=:email WHERE id=:id";
         $stmt = $this->conn->prepare($sql);
-        return $stmt->execute(['nom' => $this->nom, 'email' => $this->email, 'id' => $this->id]);
+        return $stmt->execute(['name' => $this->name, 'email' => $this->email, 'id' => $this->id]);
     }
 
     // DELETE

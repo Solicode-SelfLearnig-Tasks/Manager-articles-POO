@@ -22,4 +22,3 @@ Key things to remember:
 
 Conclusion:
 PDO combined with OOP keeps database interactions secure, organized, and reusable!
-
